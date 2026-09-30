@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dietFragment">
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+     IMPORTANT: app:startDestination should be your real start
+     destination (e.g. homeFragment or splashFragment).
+     It is set to dietFragment here only for testing.
+     Change it back to your original start destination after
+     copying the diet fragments into your existing nav_graph.
+    ═══════════════════════════════════════════════════════════
+    -->
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--             DIET FRAGMENT                  -->
+    <!-- ══════════════════════════════════════════ -->
+    <fragment
+        android:id="@+id/dietFragment"
+        android:name="lk.jiat.shapeway.activity.DietFragment"
+        android:label="Diet"
+        tools:layout="@layout/fragment_diet">
+
+        <action
+            android:id="@+id/action_dietFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--             RECIPE FRAGMENT                -->
+    <!-- ══════════════════════════════════════════ -->
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="lk.jiat.shapeway.activity.RecipeFragment"
+        android:label="Recipe"
+        tools:layout="@layout/fragment_recipe">
+
+        <argument
+            android:name="mealId"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="mealName"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="calories"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="protein"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="carbs"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="fats"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="cookingTime"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="dietType"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="mealType"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="tags"
+            app:argType="string[]"/>
+
+    </fragment>
+
+</navigation>

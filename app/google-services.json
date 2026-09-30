@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97178680785",
+    "project_id": "shapeway-e7822",
+    "storage_bucket": "shapeway-e7822.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97178680785:android:708bd52b603ea44d7174f0",
+        "android_client_info": {
+          "package_name": "lk.jiat.shapeway"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcnOLhjyI8GgjVv0rfrVOP6x1qhXNAa8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

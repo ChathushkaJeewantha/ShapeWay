@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_theme_surface_highContrast">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/quizToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/md_theme_surface_highContrast"
+        android:elevation="0dp"
+        android:layout_marginTop="30dp"
+        app:navigationIcon="@drawable/ic_back">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShapeWay"
+            android:textColor="@color/md_theme_onBackground_highContrast"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/questionProgress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#FFFFFF"
+        app:trackColor="#444444"/>
+
+</com.google.android.material.appbar.AppBarLayout>

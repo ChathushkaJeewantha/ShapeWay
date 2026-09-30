@@ -1,0 +1,19 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:strokeColor="#4F8EF7"
+    app:strokeWidth="2dp"
+    app:cardCornerRadius="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    app:cardBackgroundColor="#1A1A1A">
+
+    <TextView
+        android:text="4-Week Plan - LKR30/day"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.google.android.material.card.MaterialCardView>

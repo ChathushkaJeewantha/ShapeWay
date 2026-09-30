@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_plan"
+        android:icon="@drawable/plan"
+        android:title="Plan" />
+    <item
+        android:id="@+id/nav_workouts"
+        android:icon="@drawable/workouts"
+        android:title="Workouts" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_diet"
+        android:icon="@drawable/diet"
+        android:title="Diet" />
+
+</menu>

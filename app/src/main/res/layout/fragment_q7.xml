@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <!-- QUESTION -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How would you describe your typical day?"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
+
+
+    <!-- OPTION 1 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/q7card1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#111111"
+        app:strokeColor="#333333">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/seat"
+                android:tint="@color/md_theme_inversePrimary_highContrast"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostly sitting"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <RadioButton
+                android:id="@+id/q7r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- OPTION 2 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/q7card2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#111111"
+        app:strokeColor="#333333">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/step"
+                android:tint="@color/md_theme_inversePrimary_highContrast"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:text="Constantly on my feet"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/icon2"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/q7r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- OPTION 3 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/q7card3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#111111"
+        app:strokeColor="#333333">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/moving"
+                android:tint="@color/md_theme_inversePrimary_highContrast"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:text="Balance of sitting and moving"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/q7r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- OPTION 4 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/q7card4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#111111"
+        app:strokeColor="#333333">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/change"
+                android:tint="@color/md_theme_inversePrimary_highContrast"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:text="Activity level changes daily"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/q7r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
